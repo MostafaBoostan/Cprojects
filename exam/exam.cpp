@@ -5,7 +5,7 @@
 using namespace std;
 
 int main(){
-    int n, i, grade[3], change;
+    int n, i, grade[3], change , b;
     char answer;
     char name1[14] = "keyvoon";
     char name2[14] = "nezam";
