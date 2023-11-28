@@ -4,7 +4,7 @@
 
 using namespace std;
 
-int maxi (int, int array[]);
+int maxi (int, int []);
 
 int main(){
     int x;

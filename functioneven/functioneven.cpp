@@ -3,6 +3,7 @@
 #include <cstring>
 
 using namespace std;
+
 void my_even(int);
 
 

@@ -3,19 +3,19 @@
 #include <cstring>
 
 using namespace std;
-long long int donbale(long long int);
+unsigned long long my_even(unsigned long long);
 
 
 int main(){
-    long long int x;
+    unsigned long long x;
     cin >> x;
-    x = donbale(x);
+    x = my_even(x);
     cout << x;
     
 }
 
-long long int donbale(long long int x){
-    long long int i, answer, l, f;
+unsigned long long my_even(unsigned long long x){
+    unsigned long long i, answer, l, f;
     answer = 0;
     f = 1;
     for (i = 1; i <= x; i++){
