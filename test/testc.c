@@ -1,16 +1,33 @@
-#include <stdio.h>
-#include <stdlib.h>
-#include <string.h>
 
+#include <stdio.h> 
 
-int main() {
-    int a = 1;
-    switch(a){
-        case 3:
-        case 1:
-        case 2:
-            printf("s");
-            break;
-    }
+int f1(int n, int *score) 
+{ 
+    *score += n; 
+    return *score; 
+} 
+void f2(int n, int *score) 
+{ 
+    *score -= n; 
+    return; 
+} 
+int f3(int n, int score) 
+{ 
+    score = n; 
+} 
 
+int f4(int n, int *score){ 
+    *score -= 1; 
+} 
+
+int main() 
+{ 
+    int score = 7,y; 
+    f2(10, &score); 
+    y = f1(5, &score); 
+    f3(12, score); 
+    f4(2, &score); 
+    
 }
+
+
